@@ -43,7 +43,7 @@ namespace ApexLegendsCrashTracker {
             append.Insert(0,string.Format("Crash Occured at {0}, log files below:\n",file.LastUpdate.ToString()));
             append.Add("--------------------------------------End of Crash--------------------------------------");
             append.Add(Environment.NewLine);
-            File.WriteAllLines(documentPath, append);
+            File.AppendAllLines(documentPath, append);
 
         }
     }
